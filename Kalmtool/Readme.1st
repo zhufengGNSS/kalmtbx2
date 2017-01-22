@@ -1,0 +1,96 @@
+RELEASE NOTES FOR THE KALMTOOL TOOLBOX, VERSION 2
+=================================================
+
+This note contains important information on how the present
+toolbox is to be installed, and the conditions under which it may
+be used. Please read it carefully before use.
+
+BEFORE YOU START USING THE TOOLBOX
+After installation, all toolbox functions will be located in one
+directory, and the files associated with the demonstration
+programs will be located in a subdirectory under this. The user
+should make a path to these directories with the MATLAB function
+"path":
+   >> path(path,'/xx/.../xx/Kalmtool');
+   >> path(path,'/xx/.../xx/Kalmtool/Demo');
+If the toolbox is going to be used on a regular basis it is
+recommended to include this statement in the file 
+"startup.m", which is invoked during the start of MATLAB.
+
+If a C compiler is available, and the MATLAB "mex" command has
+been set up, the MEX functions in the demonstration directory
+are compiled with:
+   >> cd /xx/xx/.../Kalmtool/Demo
+   >> demomex
+
+This script invokes the "mex" command for each of the
+MEX functions in the demonstration directory.
+
+The manual for the toolbox is available as a pdf-file. The file
+is called "kalmman.pdf".
+
+A technical report describing the filters in detail is available
+in the postscript file "revddfilt.ps".
+
+
+CONDITIONS/DISCLAIMER
+By using the toolbox the user agrees to all of the following:
+
+o   If one is going to publish any work where this toolbox has
+    been used, please include a reference to the article:
+    M. Norgaard, N.K. Poulsen, O. Ravn: New Developments in State
+    Estimation for Nonlinear Systems, Automatica, (36:11), 
+    Nov. 2000, pp. 1627--1638.
+
+o   Magnus Norgaard does not provide any support for this
+    product whatsoever.
+
+o   The Kalmtool toolbox is shareware. The "limited version", 
+    which is the one available from the internet, does not 
+    include the C source code for the mex-files. The "full 
+    version" is the same as the "limited version", but it 
+    includes the source code. The conditions for use are the
+    same for the two versions. The full license can currently be
+    obtained for 85USD/95EUR (single-user license) or
+    150USD/170EUR (multi-user license). The price does not
+    include support. Please contact the author by e-mail for
+    registration details.
+
+    The registration requirements are the following:
+    >>> For education and research at the Technical University
+    of Denmark (DTU): Limited and full versions are free.
+
+    >>> For full-time registered undergraduate and graduate
+    students and for university researchers: The limited version
+    is free. 
+
+    >>> Others: Everyone else are free to download and evaluate
+    the toolbox for a 30 day period but are required to obtain a
+    "full license" for use beyond 30 days.
+
+    >>> Exceptions: None. Requests for free access to the source 
+    code will not be answered.
+
+o   It is not permitted to utilize any part of the software in
+    commercial products without prior written consent of Magnus
+    Norgaard.
+
+THE TOOLBOX IS PROVIDED "AS-IS" WITHOUT WARRANTY OF ANY KIND, 
+EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY OR FITNESS
+FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL MAGNUS NORGAARD
+LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL
+DAMAGES OF ANY KIND, OR DAMAGES WHATSOEVER RESULTING FROM LOSS
+OF USE, DATA, OR PROFITS, WHETHER OR NOT MAGNUS NORGAARD HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND/OR ON ANY THEORY
+OF LIABILITY ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+Trademarks of companies and/or organizations mentioned in this
+documentation appear for identification purposes only and are the
+property of their respective companies and/or organizations.
+
+Enjoy!
+
+Magnus Norgaard, m.norgaard@mail.dk
+December 12, 2001
